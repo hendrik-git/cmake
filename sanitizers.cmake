@@ -1,4 +1,4 @@
-option(ENABLE_ASAN "Enable AddressSanitizer" YES)
+option(ENABLE_ASAN "Enable AddressSanitizer" OFF)
 if(MSVC)
     if(ENABLE_ASAN)
         string(REPLACE "/RTC1" "" CMAKE_C_FLAGS_DEBUG   "${CMAKE_C_FLAGS_DEBUG}")
